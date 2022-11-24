@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3i4qam3eerec"]
+
+[ext_resource type="Script" path="res://app.cs" id="1_b6l4a"]
+
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_b6l4a")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 181.0
+offset_right = 451.0
+offset_bottom = 386.0
+text = "asdasdasd"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_right = 451.0
+offset_bottom = 182.0
+text = "this is a line of text"
+
+[connection signal="text_changed" from="TextEdit" to="." method="_on_text_edit_text_changed"]
